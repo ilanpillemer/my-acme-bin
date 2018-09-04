@@ -1,0 +1,6 @@
+,| git status
+,| git add *.go
+,| git commit -m 'tidy up tests for TDD for compare'
+,| git push
+,| git diff server.go
+,| git diff server_test.go
