@@ -1,0 +1,5 @@
+PATH=$HOME/bin:$PATH
+9 fontsrv &
+9pfuse `namespace`/font $HOME/mnt/font
+EDITOR=editinacme
+9 acme -f '/Users/ilanpillemer/mnt/font/FiraCode-Medium/15a/font' -a -l acme.dump $*
