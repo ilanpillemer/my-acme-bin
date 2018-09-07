@@ -1,6 +1,31 @@
+> git add *.go
+> git commit -m 'MS-12: update thoughts doc'
+> git push
+> git diff server.go
+> git diff server_test.go
+> git pull
+> git log --oneline -n 5
+,| git diff HEAD
+> git diff 
+
+
+web https://bitbucket.org/bxbdigital/brix-get-put/src/master/THOUGHTS.md
+
 ,| git status
-,| git add *.go
-,| git commit -m 'tidy up tests for TDD for compare'
-,| git push
-,| git diff server.go
-,| git diff server_test.go
+
+,> grep network_object
+
+| mme -whoami
+> mme '-extract' '-model=GVQTEST'
+
+name ssssssssss
+,| godoc bitbucket.org/bxbdigital/brix-get-put/internal/brix
+
+Edit .+#0/old/c/new/
+
+gofmt -w -r 'a.ID -> b.ModelId'
+
+gorename -from '"bytes".Buffer.Len' -to Size
+
+
+PATH=/usr/bin:$PATH gorename -from '"bitbucket.org/bxbdigital/brix-get-put/internal/brix".brixDefinition.Id' -to ModelId -v
