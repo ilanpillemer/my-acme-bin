@@ -1,5 +1,5 @@
 > git add *.go
-> git commit -m 'MS-12: update thoughts doc'
+> git commit -m 'MS-12: link up env variables, require user and pass it through layers'
 > git push
 > git diff server.go
 > git diff server_test.go
@@ -7,11 +7,19 @@
 > git log --oneline -n 5
 ,| git diff HEAD
 > git diff 
-
+git add 
+godoc flag Usage
 
 web https://bitbucket.org/bxbdigital/brix-get-put/src/master/THOUGHTS.md
+web http://localhost:6060/src
+web http://localhost:6060/src/9fans.net/go/acme/
+https://blog.golang.org/context
+https://mimesniff.spec.whatwg.org/
 
 ,| git status
+,| git pull origin master
+,| git reset --hard HEAD
+godoc gorename
 
 ,> grep network_object
 
@@ -19,7 +27,8 @@ web https://bitbucket.org/bxbdigital/brix-get-put/src/master/THOUGHTS.md
 > mme '-extract' '-model=GVQTEST'
 
 name ssssssssss
-,| godoc bitbucket.org/bxbdigital/brix-get-put/internal/brix
+,| godoc bitbucket.org/bxbdigital/brix-get-put/internal/brix 
+> godoc bitbucket.org/bxbdigital/brix-get-put/cmd/main
 
 Edit .+#0/old/c/new/
 
@@ -28,4 +37,4 @@ gofmt -w -r 'a.ID -> b.ModelId'
 gorename -from '"bytes".Buffer.Len' -to Size
 
 
-PATH=/usr/bin:$PATH gorename -from '"bitbucket.org/bxbdigital/brix-get-put/internal/brix".brixDefinition.Id' -to ModelId -v
+PATH=/usr/bin:$PATH gorename -from '"bitbucket.org/bxbdigital/brix-get-put/internal/brix".brixDefinition.DefId' -to DefID -v
